@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
 
 	override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 		menuInflater.inflate(R.menu.main_menu, menu)
-		// Get the SearchView and set the searchable configuration
 		val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
 		(menu?.findItem(R.id.menu_search)?.actionView as androidx.appcompat.widget.SearchView).apply {
 			setSearchableInfo(searchManager.getSearchableInfo(componentName))

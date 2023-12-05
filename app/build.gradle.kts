@@ -12,7 +12,7 @@ android {
 	defaultConfig {
 		applicationId = "com.nadhif.akhbar_lakum"
 		minSdk = 22
-		targetSdk = 33
+		targetSdk = 34
 		versionCode = 1
 		versionName = "1.0"
 
@@ -55,16 +55,16 @@ dependencies {
 	// LiveData for ViewModel
 	implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
 	implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
-	implementation("androidx.fragment:fragment-ktx:1.3.2")
+	implementation("androidx.fragment:fragment-ktx:1.6.2")
 	// Load Image with Picasso
 	implementation("com.squareup.picasso:picasso:2.8")
 
 	//cActivity for using ViewModel with Compose Steps
-	implementation("androidx.activity:activity-ktx:1.7.2")
+	implementation("androidx.activity:activity-ktx:1.8.1")
 
 	// SplashScreen API
 	implementation("androidx.core:core-splashscreen:1.0.1")
 
-	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
-	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }

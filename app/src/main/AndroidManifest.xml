@@ -27,7 +27,8 @@ xmlns:tools="http://schemas.android.com/tools">
     </activity>
     <activity
         android:name=".ui.detail.DetailNewsActivity"
-        android:exported="false" />
+        android:exported="true"
+        android:theme="@style/Theme.Akhbarlakum"/>
     <activity
         android:name=".MainActivity"
         android:exported="true"

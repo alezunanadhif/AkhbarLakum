@@ -42,15 +42,6 @@ class DetailNewsActivity : AppCompatActivity() {
         val webSetting = binding.wvDetail.settings
         webSetting.mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
 
-        binding.wvDetail.webViewClient = object: WebViewClient() {
-            override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
-                binding.loadingView.root.visibility = View.VISIBLE
-            }
-
-            override fun onPageFinished(view: WebView?, url: String?) {
-                binding.loadingView.root.visibility = View.GONE
-            }
-        }
         dataNews?.url?.let { binding.wvDetail.loadUrl(it) }
     }
 
